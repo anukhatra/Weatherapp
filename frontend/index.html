@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+    <div class="header-style">
+        <div>Weather Forcast</div>
+    </div>
+    <div class="all-forcasts">
+        <input  type="text" id="title" placeholder="Add Location" />
+        <input  type="text" id="location" placeholder="Add city" />
+        <input  type="text" id="latt" placeholder="Add lattitude longitude" />
+        <button onclick="addWeather()" class="button">Add Weather</button>
+    </div>
+    <div class="all-forcasts">
+    <div id="result" class="location-style" >
+
+    </div>
+</div>
+    <script src="./logic.js"></script>
+</body>
+
+</html>

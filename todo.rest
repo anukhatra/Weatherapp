@@ -1,0 +1,12 @@
+GET http://localhost:3000/weathers
+
+###
+
+POST http://localhost:3000/weathers
+Content-Type: application/json
+
+{
+        "title": "Sweden",
+        "location_type": "City",    
+        "latt_long": "19.076191,72.875877"
+}

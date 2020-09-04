@@ -10,7 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "@giphy/js-fetch-api": "^1.6.2",
+    "@giphy/react-components": "^1.7.1",
+    "express": "^4.17.1",
+    "request": "^2.88.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"

@@ -1,6 +1,6 @@
-  
+
 const express = require('express')
-function getId(){
+function getId() {
     return '_' + Math.random().toString(36).substr(2, 9);
 };
 const app = express()
@@ -8,10 +8,10 @@ const app = express()
 app.use(express.json())
 app.use(express.static('frontend'))
 for (var i = 0; i < 5; i++) {
-console.log(getId())
+    console.log(getId())
 }
 
-const weathers = [ 
+const weathers = [
     {
         title: 'Prague',
         location_type: 'City',
@@ -44,12 +44,12 @@ const weathers = [
     },]
 
 
-app.get("/weathers", (req , res) =>{
+app.get("/weathers", (req, res) => {
     res.json(weathers)
 })
 
-app.post("/weathers", (req , res) =>{
-    let newWeather= req.body
+app.post("/weathers", (req, res) => {
+    let newWeather = req.body
     newWeather.id = getId()
     weathers.push(newWeather)
     res.json("New weather is added")
@@ -66,30 +66,19 @@ app.post("/weathers", (req , res) =>{
 })
  */
 
+/* 
+function checkExistance(req, res, next) {
+    const paramId = req.params.id
+    let findWeather = weathers.findIndex((weather) => weather.id == paramId)
 
-function checkExistance (req, res, next){
-const paramId = req.params.id 
-let findWeather = weathers.findIndex((weather) =>weather.id == paramId)
- 
-if(findWeather == -1){
-res.status(404).json({status:"Weather information not available"})
- }else {
-req.findWeather = findWeather
-next()
- }
- 
-}
- 
+    if (findWeather == -1) {
+        res.status(404).json({ status: "Weather information not available" })
+    } else {
+        req.findWeather = findWeather
+        next()
+    }
 
-/* app.use((req, res)=>{
-res.status(404).json(
-
- {
-message:'Not available'
- })
-}) */
-
-
+} */
 
 app.listen(3000, 'localhost', () => {
     console.log('Server is up and running');

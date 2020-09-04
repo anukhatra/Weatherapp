@@ -5,14 +5,15 @@ This is a simple node express application with that shows how react can be used 
 
 Description:
 
+Github link:
 Github: https://github.com/anukhatra/
 
 Build/Run
   
   Requirements
-â€¢	Node.js
-â€¢	NPM
-    Express
+	Node.js
+	NPM
+  Express
 
 After creating the weatherApp folder in terminal these where used 
 
@@ -24,4 +25,4 @@ npm i express
 
 To run the project use:
 
-	npm run dev
+npm run dev

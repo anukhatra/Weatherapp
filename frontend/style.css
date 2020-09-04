@@ -1,3 +1,9 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 .text_input {
     font-size: 16px;
     margin: 4px 2px;
@@ -43,6 +49,8 @@
     margin-right: 90px;
     padding: 6px;
     background-color: azure;  
+    justify-content: center;
+    align-items: center;
     
 
 }
